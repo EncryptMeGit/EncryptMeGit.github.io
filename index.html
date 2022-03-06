@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EncryptMeGit</title>
+        <script type="module" src="./scripts/main.js"></script>
+        <style>
+            @font-face {
+                font-family: SOURCE;
+                src: url('./other/SourceCodePro-VariableFont_wght.ttf');
+            }
+            html {
+                background-color: black;
+                color: white;
+                font-family: SOURCE;
+                font-weight: bolder;
+                font-size: 20px;
+            }
+            button {
+                height: 4%;
+                width: 7%;
+                background-color: grey;
+                color: white;
+                font-size: 20px;
+                top: 8%;
+                position: absolute;
+                margin-left: 16%;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            input {
+                font-size: 20px;
+                height: 3%;
+                background-color: grey;
+                color: white;
+                top: 8%;
+                position: absolute;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+            }
+            
+            .a2 {
+                margin-top: 3%;
+            }
+            .title {
+                height: 25%;
+            }
+            .console {
+                top: 25%;
+                width: 100%;
+                left: 0;
+                position: absolute;
+                height: 75%;
+                max-height: 75%;
+                overflow-y: scroll;
+            }
+        </style>
+    </head>
+    <div class="title">
+        <p>DECRYPT/ENCRYPT NUMBERS</p>
+        <input id="Entext" placeholder="ENCRYPT">
+        <button id="ENCRYPT">SUBMIT</button>
+        <input id="Detext" class="a2" placeholder="DECRYPT">
+        <button id="DECRYPT" class="a2">SUBMIT</button>
+    </div>
+    <div class="console" id="console">
+        
+    </div>
+</html>
